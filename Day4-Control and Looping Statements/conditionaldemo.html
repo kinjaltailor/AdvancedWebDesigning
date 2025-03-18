@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditional Statement</title>
+</head>
+<body>
+    <script>
+        // WAP to check number is zero or not
+
+        /*
+        let n=parseInt(prompt("Enter n: "));
+        // Ternary ?:
+        // n===0 ? console.log(n,"is zero number") : console.log(n, "is not zero number");
+        if (n===0){
+            console.log(n, "is zero number")
+        }
+        else{
+            console.log(n, "is not zero number")
+        }
+        */
+        // WAP to find greatest number among three any number by using nested if else
+
+        /*
+        let a = parseInt(prompt("Enter a: "))
+        let b = parseInt(prompt("Enter b: "))
+        let c = parseInt(prompt("Enter c: "))
+
+        if(a>b && a>c){
+            console.log(a, "is greatest")
+        }
+        else{
+            if(b>c){
+                console.log(b, "is greatest");                
+            }
+            else{
+                console.log(c, "is greatest");                
+            }
+        }
+        */
+
+        // WAP to show add, sub, multiplication, division as per choice number asked by user ladder if-else
+      
+        document.write("1: Add <br> 2: Sub <br> 3: Mul <br> 4: Div <br>")
+        let choice = parseInt(prompt("Enter choice: "))
+        let a = parseInt(prompt("Enter a: "))
+        let b = parseInt(prompt("Enter b: "))
+        /*
+        if(choice===1){
+            document.write("Addition: ",(a+b))
+        }
+        else if(choice===2){
+            document.write("Subtraction: ",(a-b))
+        }
+        else if(choice === 3){
+            document.write("Multiplication: ",(a*b))
+        }
+        else if(choice === 4){
+            document.write("Division: ",(a/b))
+        }
+        else{
+            document.write("Invalild Choice number")
+        }
+        */
+        switch(choice){
+            case 1:
+                document.write("Addition: ",(a+b))
+                break;
+            case 2:
+                document.write("Subtraction: ",(a-b))
+                break;
+            case 3:
+                document.write("Multiplication: ",(a*b))
+                break;
+            case 4:
+                document.write("Division: ",(a/b))
+                break;
+            default:
+                document.write("Invalid Choice Number")
+                break; 
+        }
+
+    </script>
+</body>
+</html>

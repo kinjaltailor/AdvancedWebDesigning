@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Demo</title>
+</head>
+<body>
+    <script>
+        // array writing type-1
+        /*
+        let empnames = ["john", "alex", "pooja", "jiya"]
+        console.log(empnames, typeof(empnames));
+        let a = []
+        console.log(a, typeof(a));
+        a.push("banana") // adds new elements in the end
+        console.log(a, typeof(a));
+        empnames.push("komal")
+        console.log(empnames, typeof(empnames));
+        a.unshift("grape") // adds new element at the start
+        console.log(a, typeof(a));
+        empnames.unshift("rohan")
+        console.log(empnames, typeof(empnames));
+        let x = []
+        console.log(x);
+        x[6] = "red" // adds elements at given index position
+        console.log(x);
+        x[3] = "blue"
+        console.log(x);
+        console.log(empnames[2]);  // index start from 0                                                               
+        console.log(empnames[-1]); //   negative index wont work but ans is undefined                                                              
+
+        // removig methods
+        empnames.pop()
+        console.log(empnames); // remove last element
+        empnames.shift()
+        console.log(empnames); // remove first element     
+        delete empname[2]
+        console.log(empnames);     
+        */
+
+        // array writing type-2 by using new keyword
+        let colors = new Array();
+        colors[0] = "red"
+        colors.push("green")
+        colors.unshift("blue")
+        console.log(colors);
+        // Traversing Elements: type-1
+        for(let i=0; i<colors.length; i++){
+            console.log(colors[i]);
+            
+        }
+        // Traversing Elements: type-2 via for in
+        for(let i in colors)
+        {
+            console.log(i, colors[i]);
+            
+        }
+        // Traversing Elements: type-3  via for of      
+        for(let i of colors){
+            console.log(i);
+            
+        }
+        // Traversing Elements: type-4 via foreach
+        colors.forEach(i=>{
+            console.log(i);            
+        })
+
+    </script>
+</body>
+</html>
