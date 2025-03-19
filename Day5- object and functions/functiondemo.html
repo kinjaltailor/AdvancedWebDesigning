@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Demo</title>
+</head>
+<body>
+    <script>
+        // User defined Functions types: 1) Traditional 2) Annonymous 3) Arrow
+        
+        // 1) Default
+        /*
+        function show(){
+            console.log("function1");
+            
+        }
+        show()
+        */
+
+        // 2) with parameter but without return type
+        /*
+        function show(msg){
+            console.log("function1", msg);
+            
+        }
+        show("parameter fun")
+        */
+
+        // 3) Without parameter but with return type
+        /*
+        function show(){
+            return "function without parameter but return type"
+        }
+        console.log(show())
+        */
+
+        // 4) with parameter and with reutn type
+        /*
+        function add(a,b){
+            return a+b;
+        }
+        console.log("addition: ",add(15, 50));
+        */
+
+        // Functional Parameters
+        /*
+        function add(a, b=10){
+            return a+b
+        }
+        console.log(add(5)); // 15
+
+        function sub(a=10, b){
+            return a-b;
+        }
+        console.log(sub(5)); // NaN (non-default argument cannot pass to default argument)
+
+        function sub1(a=10, b=100){
+            return a-b
+        }
+        console.log(sub1(5)); // -95
+        */
+
+        // ...rest parameter
+        function showcolors(...args){
+            return args;
+        }
+        console.log(showcolors("red", "green", "blue"));
+
+        // function
+        /*
+        let x = sum(34, 455, 100, 254)
+        // console.log(x, typeof(x));
+        function sum() {
+            let total = 0;
+            for(let i=0; i<arguments.length; i++){
+                total += arguments[i];
+            }
+            return total;
+        }
+        console.log(x);
+        */
+
+        // Annonymous function
+
+        let show = function () {
+            console.log("annonymous function");            
+        }
+        show()
+
+        // Arrow function
+        let display=()=>{
+            console.log("arrow function");
+        }
+        display()
+        
+    </script>
+</body>
+</html>
